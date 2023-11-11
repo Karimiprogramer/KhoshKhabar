@@ -1,0 +1,12 @@
+C:\Users\shahn\Desktop\KhoshKhabar\obj\Debug\net7.0\KhoshKhabar.csproj.AssemblyReference.cache
+C:\Users\shahn\Desktop\KhoshKhabar\obj\Debug\net7.0\KhoshKhabar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shahn\Desktop\KhoshKhabar\obj\Debug\net7.0\KhoshKhabar.AssemblyInfoInputs.cache
+C:\Users\shahn\Desktop\KhoshKhabar\obj\Debug\net7.0\KhoshKhabar.AssemblyInfo.cs
+C:\Users\shahn\Desktop\KhoshKhabar\obj\Debug\net7.0\KhoshKhabar.csproj.CoreCompileInputs.cache
+C:\Users\shahn\Desktop\KhoshKhabar\bin\Debug\net7.0\KhoshKhabar.deps.json
+C:\Users\shahn\Desktop\KhoshKhabar\bin\Debug\net7.0\KhoshKhabar.dll
+C:\Users\shahn\Desktop\KhoshKhabar\bin\Debug\net7.0\KhoshKhabar.pdb
+C:\Users\shahn\Desktop\KhoshKhabar\obj\Debug\net7.0\KhoshKhabar.dll
+C:\Users\shahn\Desktop\KhoshKhabar\obj\Debug\net7.0\refint\KhoshKhabar.dll
+C:\Users\shahn\Desktop\KhoshKhabar\obj\Debug\net7.0\KhoshKhabar.pdb
+C:\Users\shahn\Desktop\KhoshKhabar\obj\Debug\net7.0\ref\KhoshKhabar.dll

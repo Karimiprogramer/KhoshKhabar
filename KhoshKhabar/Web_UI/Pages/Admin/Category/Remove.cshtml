@@ -1,0 +1,35 @@
+﻿@page "{ID}"
+@model Web_UI.Pages.Admin.Category.RemoveModel
+@{
+    Layout = "_Layout";
+}
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <ul role="tablist" class="nav nav-tabs card-header-tabs float-right">
+                        <li class="nav-item">
+                            <a href="#tab-10" data-toggle="tab" class="nav-link active">حذف خبر</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content pt-0">
+                        <div role="tabpanel" id="tab-10" class="tab-pane fade show active">
+                            <form asp-page="Remove" method="post">
+                                <input type="hidden" asp-for="Category.ID" />           
+                                <input type="hidden" asp-for="Category.Title" /> 
+                                <a class="card-header text-center">
+                                    آیا از حذف @Model.Category.Title مطمّن هستید
+                                </a>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

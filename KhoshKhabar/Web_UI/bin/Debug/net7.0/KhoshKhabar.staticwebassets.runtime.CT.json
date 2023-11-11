@@ -1,0 +1,833 @@
+{
+  "ContentRoots": [
+    "/src/Web_UI/wwwroot/"
+  ],
+  "Root": {
+    "Children": {
+      "Css": {
+        "Children": {
+          "all.min.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Css/all.min.css"
+            },
+            "Patterns": null
+          },
+          "animate.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Css/animate.css"
+            },
+            "Patterns": null
+          },
+          "bootstrap-rtl.min.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Css/bootstrap-rtl.min.css"
+            },
+            "Patterns": null
+          },
+          "bootstrap.min.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Css/bootstrap.min.css"
+            },
+            "Patterns": null
+          },
+          "icheck-bootstrap.min.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Css/icheck-bootstrap.min.css"
+            },
+            "Patterns": null
+          },
+          "Menu-demo2.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Css/Menu-demo2.css"
+            },
+            "Patterns": null
+          },
+          "owl-carousel": {
+            "Children": {
+              "owl.carousel.min.css": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Css/owl-carousel/owl.carousel.min.css"
+                },
+                "Patterns": null
+              },
+              "owl.theme.default.min.css": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Css/owl-carousel/owl.theme.default.min.css"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "sina-nav.min.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Css/sina-nav.min.css"
+            },
+            "Patterns": null
+          },
+          "Style.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Css/Style.css"
+            },
+            "Patterns": null
+          },
+          "Styler.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Css/Styler.css"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "favicon.jpg": {
+        "Children": null,
+        "Asset": {
+          "ContentRootIndex": 0,
+          "SubPath": "favicon.jpg"
+        },
+        "Patterns": null
+      },
+      "Fonts": {
+        "Children": {
+          "CocoBiker.eot": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/CocoBiker.eot"
+            },
+            "Patterns": null
+          },
+          "CocoBiker.otf": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/CocoBiker.otf"
+            },
+            "Patterns": null
+          },
+          "CocoBiker.svg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/CocoBiker.svg"
+            },
+            "Patterns": null
+          },
+          "CocoBiker.ttf": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/CocoBiker.ttf"
+            },
+            "Patterns": null
+          },
+          "CocoBiker.woff": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/CocoBiker.woff"
+            },
+            "Patterns": null
+          },
+          "CocoBiker.woff2": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/CocoBiker.woff2"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum).eot": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum).eot"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum).ttf": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum).ttf"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum).woff": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum).woff"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum).woff2": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum).woff2"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum)_Bold.eot": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum)_Bold.eot"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum)_Bold.ttf": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum)_Bold.ttf"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum)_Bold.woff": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum)_Bold.woff"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum)_Bold.woff2": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum)_Bold.woff2"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum)_Light.eot": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum)_Light.eot"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum)_Light.ttf": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum)_Light.ttf"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum)_Light.woff": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum)_Light.woff"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum)_Light.woff2": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum)_Light.woff2"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum)_Medium.eot": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum)_Medium.eot"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum)_Medium.ttf": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum)_Medium.ttf"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum)_Medium.woff": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum)_Medium.woff"
+            },
+            "Patterns": null
+          },
+          "IRANSansWeb(FaNum)_Medium.woff2": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Fonts/IRANSansWeb(FaNum)_Medium.woff2"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "Images": {
+        "Children": {
+          "404 Error.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/404 Error.png"
+            },
+            "Patterns": null
+          },
+          "986.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/986.jpg"
+            },
+            "Patterns": null
+          },
+          "987.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/987.jpg"
+            },
+            "Patterns": null
+          },
+          "988.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/988.jpg"
+            },
+            "Patterns": null
+          },
+          "989.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/989.jpg"
+            },
+            "Patterns": null
+          },
+          "avatar.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/avatar.jpg"
+            },
+            "Patterns": null
+          },
+          "banner1.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/banner1.png"
+            },
+            "Patterns": null
+          },
+          "banner2.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/banner2.png"
+            },
+            "Patterns": null
+          },
+          "banner3.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/banner3.png"
+            },
+            "Patterns": null
+          },
+          "banner4.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/banner4.png"
+            },
+            "Patterns": null
+          },
+          "chevron.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/chevron.png"
+            },
+            "Patterns": null
+          },
+          "chevron2.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/chevron2.png"
+            },
+            "Patterns": null
+          },
+          "dentist.svg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/dentist.svg"
+            },
+            "Patterns": null
+          },
+          "emono1.jpeg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/emono1.jpeg"
+            },
+            "Patterns": null
+          },
+          "eslimibkg2.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/eslimibkg2.png"
+            },
+            "Patterns": null
+          },
+          "event01.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/event01.jpg"
+            },
+            "Patterns": null
+          },
+          "flag.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/flag.png"
+            },
+            "Patterns": null
+          },
+          "foot.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/foot.png"
+            },
+            "Patterns": null
+          },
+          "head.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/head.png"
+            },
+            "Patterns": null
+          },
+          "HeaderBackground.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/HeaderBackground.png"
+            },
+            "Patterns": null
+          },
+          "llogo-01.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/llogo-01.png"
+            },
+            "Patterns": null
+          },
+          "llogo-02.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/llogo-02.png"
+            },
+            "Patterns": null
+          },
+          "llogo-03.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/llogo-03.png"
+            },
+            "Patterns": null
+          },
+          "llogo-05.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/llogo-05.png"
+            },
+            "Patterns": null
+          },
+          "llogo-06.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/llogo-06.png"
+            },
+            "Patterns": null
+          },
+          "logo.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/logo.png"
+            },
+            "Patterns": null
+          },
+          "logo2.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/logo2.png"
+            },
+            "Patterns": null
+          },
+          "logo_footer.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/logo_footer.png"
+            },
+            "Patterns": null
+          },
+          "manage-bg.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/manage-bg.jpg"
+            },
+            "Patterns": null
+          },
+          "News": {
+            "Children": {
+              "5.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/News/5.jpg"
+                },
+                "Patterns": null
+              },
+              "6.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/News/6.jpg"
+                },
+                "Patterns": null
+              },
+              "658.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/News/658.jpg"
+                },
+                "Patterns": null
+              },
+              "987.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/News/987.jpg"
+                },
+                "Patterns": null
+              },
+              "news1.png": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/News/news1.png"
+                },
+                "Patterns": null
+              },
+              "news2.jpeg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/News/news2.jpeg"
+                },
+                "Patterns": null
+              },
+              "news3.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/News/news3.jpg"
+                },
+                "Patterns": null
+              },
+              "news4.png": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/News/news4.png"
+                },
+                "Patterns": null
+              },
+              "pishkhn9811.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/News/pishkhn9811.jpg"
+                },
+                "Patterns": null
+              },
+              "samad9810.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/News/samad9810.jpg"
+                },
+                "Patterns": null
+              },
+              "samad9811.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/News/samad9811.jpg"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "pttern.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/pttern.png"
+            },
+            "Patterns": null
+          },
+          "pttern2.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/pttern2.png"
+            },
+            "Patterns": null
+          },
+          "Slides": {
+            "Children": {
+              "Slide-1.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/Slides/Slide-1.jpg"
+                },
+                "Patterns": null
+              },
+              "Slide-11.png": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/Slides/Slide-11.png"
+                },
+                "Patterns": null
+              },
+              "Slide-2.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/Slides/Slide-2.jpg"
+                },
+                "Patterns": null
+              },
+              "Slide-2.png": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/Slides/Slide-2.png"
+                },
+                "Patterns": null
+              },
+              "Slide-3.png": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/Slides/Slide-3.png"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "soroush.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/soroush.png"
+            },
+            "Patterns": null
+          },
+          "Svg": {
+            "Children": {
+              "login.svg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/Svg/login.svg"
+                },
+                "Patterns": null
+              },
+              "user.svg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/Svg/user.svg"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "Teleco.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/Teleco.png"
+            },
+            "Patterns": null
+          },
+          "Teleco1.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/Teleco1.jpg"
+            },
+            "Patterns": null
+          },
+          "user-reg-ilstrtr.svg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Images/user-reg-ilstrtr.svg"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "Js": {
+        "Children": {
+          "all.min.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Js/all.min.js"
+            },
+            "Patterns": null
+          },
+          "bootstrap.min.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Js/bootstrap.min.js"
+            },
+            "Patterns": null
+          },
+          "custom.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Js/custom.js"
+            },
+            "Patterns": null
+          },
+          "jquery-2.0.0.min.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Js/jquery-2.0.0.min.js"
+            },
+            "Patterns": null
+          },
+          "jquery.chainedTo.min.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Js/jquery.chainedTo.min.js"
+            },
+            "Patterns": null
+          },
+          "jquery.min.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Js/jquery.min.js"
+            },
+            "Patterns": null
+          },
+          "Menu.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Js/Menu.js"
+            },
+            "Patterns": null
+          },
+          "owl.carousel.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Js/owl.carousel.js"
+            },
+            "Patterns": null
+          },
+          "sina-nav.min.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "Js/sina-nav.min.js"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      }
+    },
+    "Asset": null,
+    "Patterns": [
+      {
+        "ContentRootIndex": 0,
+        "Pattern": "**",
+        "Depth": 0
+      }
+    ]
+  }
+}

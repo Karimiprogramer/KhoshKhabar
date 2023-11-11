@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>سایت خبری خوش خبر</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="fa" />
+    <meta name="document-type" content="Public" />
+    <meta name="document-rating" content="General" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ofoghata" />
+    <partial name="_JS" />
+</head>
+<body>
+    @await Component.InvokeAsync("Header")
+    @RenderBody()
+    @await Component.InvokeAsync("Footer")
+    <partial name="_CSS" />
+</body>
+</html>

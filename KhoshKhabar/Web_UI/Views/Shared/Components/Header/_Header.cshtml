@@ -1,0 +1,173 @@
+﻿@{
+    var pc = new System.Globalization.PersianCalendar();
+    int pday = pc.GetDayOfMonth(DateTime.Now);
+    string pmonth = pc.GetMonth(DateTime.Now).ToString();
+    string dayofweek = pc.GetDayOfWeek(DateTime.Now).ToString();
+    switch (dayofweek)
+    {
+        case "Saturday":
+            dayofweek = "شنبه";
+            break;
+        case "Sunday":
+            dayofweek = "یکشنبه";
+            break;
+        case "Monday":
+            dayofweek = "دوشنبه";
+            break;
+        case "Tuesday":
+            dayofweek = "سه شنبه";
+            break;
+        case "Wednesday":
+            dayofweek = "چهارشنبه";
+            break;
+        case "Thursday":
+            dayofweek = "پنجشنبه";
+            break;
+        case "Friday":
+            dayofweek = "جمعه";
+            break;
+
+        default:
+            break;
+    }
+    switch (pmonth)
+    {
+        case "1":
+            pmonth = "فروردین";
+            break;
+        case "2":
+            pmonth = "اردیبهشت";
+            break;
+        case "3":
+            pmonth = "خرداد";
+            break;
+        case "4":
+            pmonth = "تیر";
+            break;
+        case "5":
+            pmonth = "مرداد";
+            break;
+        case "6":
+            pmonth = "شهریور";
+            break;
+        case "7":
+            pmonth = "مهر";
+            break;
+        case "8":
+            pmonth = "آبان";
+            break;
+        case "9":
+            pmonth = "آذر";
+            break;
+        case "10":
+            pmonth = "دی";
+            break;
+        case "11":
+            pmonth = "بهمن";
+            break;
+        case "12":
+            pmonth = "اسفند";
+            break;
+        default:
+            break;
+    }
+    int pyear = pc.GetYear(DateTime.Now);
+    string full = $" امروز {dayofweek} {pday} {pmonth} {pyear} ";
+}
+<section id="tophead" class="container-fluid p-2 grad-bg" style="background-color: # ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-5 d-lg-block d-none">
+                <a href="#"><img src="~/Master/Images/logo2.png" class="img-fluid"></a>
+            </div>
+
+            <div class="col-lg-3 col-6 mr-auto">
+                <div class="d-flex flex-column">
+                    <span class="text-white">
+                        @full
+                    </span>
+                    <form class="d-sm-block d-none">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="جستجو .." onfocus="this.placeholder = ''" onblur="this.placeholder = 'جستجو ..'">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-success" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<header class="nav-container">
+    <nav class="sina-nav mobile-sidebar navbar-fixed" data-top="60">
+        <div class="container">
+
+            <div class="extension-nav">
+                <ul class="pt-2">
+                    <li>
+                        <a id="loginbtn" href="Login.html" class="btn btn-link p-1 ml-2">
+                            <img src="~/Master/Images/Svg/login.svg"><span class="mr-1">ورود</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="loginbtn" href="Register.html" class="btn btn-link p-1 ml-2">
+                            <img src="~/Master/Images/Svg/user.svg"><span class="mr-1">ثبت نام</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sina-nav-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="sina-brand pl-4 d-lg-none d-block" href="Index.html">
+                    <img src="Images/logo.png" class="img-fluid">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="sina-menu sina-menu-center">
+                    <li><a href="Index.html">صفحه اصلی</a></li>
+
+                    <li><a href="Gallery.html">گالری تصاویر</a></li>
+                    <li><a href="Ourteam.html">معرفی مدیران</a></li>
+                    <li><a href="News.html">اخبار و رویدادها</a></li>
+                    <li><a href="Faq.html">سوالات متداول</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">برگه ها<i class="fa  fa-chevron-down pr-2"></i></a>
+                        <ul class="dropdown-menu animated">
+                            <li><a href="News_Details.html">جزئیات اخبار</a></li>
+                            <li><a href="Component.html">المان ها</a></li>
+                            <li><a href="Features.html">ویژگی ها</a></li>
+                            <li><a href="Guide.html">راهنمای استفاده</a></li>
+                            <li><a href="Price.html">جدول تعرفه</a></li>
+                            <li><a href="404.html">صفحه 404</a></li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">سایر برگه ها<i class="fa  fa-chevron-down pr-2"></i></a>
+                        <ul class="dropdown-menu animated">
+                            <li><a href="Service.html">خدمات</a></li>
+                            <li><a href="Success.html">ثبت موفق</a></li>
+                            <li><a href="UnSuccess.html">ثبت ناموفق</a></li>
+                            <li><a href="Waiting.html">صفحه انتظار</a></li>
+                            <li><a href="Blank.html">صفحه خالی</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="AboutUs.html">درباره ما</a></li>
+                    <li><a href="ContactUs.html">ارتباط با ما</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>

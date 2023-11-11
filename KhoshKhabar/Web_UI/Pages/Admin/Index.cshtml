@@ -1,0 +1,59 @@
+﻿@page
+@model Web_UI.Pages.Admin.IndexModel
+@{
+    Layout = "_Layout";
+}
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-header text-center">پنل ادمین سایت خوش خبر</p>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content pt-0">
+                        <div role="tabpanel" id="tab-10" class="tab-pane fade show active">
+                            <h1>به پنل ادمین سایت خوش خبر خوش آمدید</h1>
+                            <p>این پنل با ❤️ توسط محمد مهدی کریمی طراحی شده است . </p>
+                            <div class="row mb-5">
+                                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                    <div class="card flex-fill">
+                                        <div class="card-header">
+                                            <h5 class="card-title mb-0">مدیریت دسته بندی ها</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <a class="btn btn-grad text-white" asp-page="Category/Index">بزن بریم</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                    <div class="card flex-fill">
+                                        <div class="card-header">
+                                            <h5 class="card-title mb-0">مدیریت کاربران</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                در دست احداث
+                                            </p>
+                                            <a class="btn btn-grad text-white disabled" asp-page="User/Index">بزن بریم</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                    <div class="card flex-fill">
+                                        <div class="card-header">
+                                            <h5 class="card-title mb-0">مدیریت مقالات</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <a class="btn btn-grad text-white" asp-page="News/Index">بزن بریم</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

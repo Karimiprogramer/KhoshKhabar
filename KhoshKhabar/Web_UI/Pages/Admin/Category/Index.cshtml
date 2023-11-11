@@ -1,0 +1,96 @@
+﻿@page
+@model Web_UI.Pages.Admin.Category.IndexModel
+@{
+    Layout = "_Layout";
+}
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-header text-center">مدیریت دسته بندی ها</p>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content pt-0">
+                        <div role="tabpanel" id="tab-20" class="tab-pane fade show active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-2 mb-4">
+                                        <a class="btn btn-success mt-3" asp-page="Add">افزودن دسته بندی</a>
+                                    </div>
+                                    <div class="col-10">
+                                        @if (Model.Categories.Count < 1)
+                                        {
+                                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                                شما هیچ دسته بندی نساختید
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                        }
+                                        @if (HttpContext.Request.Query["result"] == "success")
+                                        {
+                                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                                عملیات با موفقیت انجام شد
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                        }
+                                        else if (HttpContext.Request.Query["result"] == "fail")
+                                        {
+                                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                                عملیات با شکست رو به رو شد
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                        }
+                                        @if (Model.Categories != null)
+                                        {
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ردیف</th>
+                                                        <th>نام دسته بندی</th>
+                                                        <th>اعمال قابل انجام</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @{
+                                                        int counter = 1;
+                                                    }
+                                                    @foreach (var item in Model.Categories)
+                                                    {
+                                                        <tr>
+                                                            <td>@counter</td>
+                                                            <td>@item.Title</td>
+                                                            <td>
+                                                                <a class="btn btn-warning" asp-page="Update" asp-route-ID="@item.ID">ویرایش</a>
+                                                                <a class="btn btn-danger" asp-page="Remove" asp-route-ID="@item.ID">حذف</a>
+                                                            </td>
+                                                        </tr>
+                                                        counter++;
+                                                    }
+
+                                                </tbody>
+                                            </table>
+                                        }
+                                        else
+                                        {
+                                            <div class="jumbotron bg-warning">
+                                                <p class="text-xl-center" style="font-size :x-large;">شما هنوز هیچ دسته بندی وارد نکردید</p>
+                                            </div>
+                                        }
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
