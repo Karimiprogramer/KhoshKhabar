@@ -16,11 +16,13 @@
                         <form asp-page="Add" method="post">
                             <div class="row">
                                 <div class="col-6">
-                                    <input type="text" asp-for="Category.Title" placeholder="عنوان دسته بندی" />
-                                    <span asp-validation-for="Category.Title" class="text-danger"></span>
-                                </div>
-                                <div class="col-6">
-                                    <button type="submit" class="btn btn-primary">ثبت</button>
+                                    <div class="custom-control">
+                                        <input type="text" asp-for="Category.Title" placeholder="عنوان دسته بندی" class="form-control" />
+                                        <span asp-validation-for="Category.Title" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="submit" class="btn btn-primary">ثبت</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
