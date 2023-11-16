@@ -30,6 +30,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Database\Database.csproj" />
+    <ProjectReference Include="..\KarimHash\KarimHash.csproj" />
     <ProjectReference Include="..\Services\Services.csproj" />
   </ItemGroup>
 

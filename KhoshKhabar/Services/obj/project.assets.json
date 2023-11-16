@@ -1067,6 +1067,16 @@
         "runtime": {
           "bin/placeholder/Database.dll": {}
         }
+      },
+      "DTOs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/DTOs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTOs.dll": {}
+        }
       }
     }
   },
@@ -2894,10 +2904,16 @@
       "type": "project",
       "path": "../Database/Database.csproj",
       "msbuildProject": "../Database/Database.csproj"
+    },
+    "DTOs/1.0.0": {
+      "type": "project",
+      "path": "../DTOs/DTOs.csproj",
+      "msbuildProject": "../DTOs/DTOs.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "DTOs >= 1.0.0",
       "Database >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.13",
@@ -2939,6 +2955,9 @@
           "projectReferences": {
             "C:\\Users\\shahn\\Documents\\GitHub\\KhoshKhabar\\KhoshKhabar\\Database\\Database.csproj": {
               "projectPath": "C:\\Users\\shahn\\Documents\\GitHub\\KhoshKhabar\\KhoshKhabar\\Database\\Database.csproj"
+            },
+            "C:\\Users\\shahn\\Documents\\GitHub\\KhoshKhabar\\KhoshKhabar\\DTOs\\DTOs.csproj": {
+              "projectPath": "C:\\Users\\shahn\\Documents\\GitHub\\KhoshKhabar\\KhoshKhabar\\DTOs\\DTOs.csproj"
             }
           }
         }

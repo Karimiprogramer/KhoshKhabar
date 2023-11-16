@@ -1,4 +1,47 @@
 ﻿@page
 @model Web_UI.Pages.Admin.User.AddModel
 @{
+    Layout = "_Layout";
 }
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-header text-center">افزودن کاربر جدید</p>
+                </div>
+                <div class="card-body">
+                    <div class="container">
+
+                        <form asp-page="Add" method="post">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="custom-control">
+                                        <p>نام کاربر</p>
+                                        <input type="text" asp-for="User.Name" class="form-control" />
+                                        <span asp-validation-for="User.Name" class="text-danger"></span>
+                                        <p>مشخصات کاربر</p>
+                                        <input type="text" asp-for="User.Bio" class="form-control" />
+                                        <span asp-validation-for="User.Bio" class="text-danger"></span>
+                                        <p>شماره تلفن</p>
+                                        <input type="tel" asp-for="User.PhoneNumber" class="form-control" />
+                                        <span asp-validation-for="User.PhoneNumber" class="text-danger"></span>
+                                        <p>رمز عبور</p>
+                                        <input type="password" asp-for="User.PassWordHash" class="form-control" />
+                                        <span asp-validation-for="User.PassWordHash" class="text-danger"></span>
+                                        <p>سطح دسترسی</p>
+                                        <select></select>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="submit" class="btn btn-primary">ثبت</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

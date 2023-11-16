@@ -14,7 +14,7 @@ namespace Database.Models
         public string Bio { get; set; }
         public string PhoneNumber { get; set; }
         public string PassWordHash { get; set; }
-        public UserType Modfier { get; set; }
+       // public UserType Modfier { get; set; }
 
         [InverseProperty("Author")]
         public List<Content>? Contents { get; set; }

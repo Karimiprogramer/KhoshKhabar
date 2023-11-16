@@ -17,5 +17,7 @@ namespace Services.Interfaces
         public bool UpdateUser(User User);
         public bool DeleteUser(int id);
         public bool DeleteUser(User User);
+        public DTOs.EditableUserDTO GetEditableUser(int id);
+        public bool UpdateUser(DTOs.EditableUserDTO? User);
     }
 }

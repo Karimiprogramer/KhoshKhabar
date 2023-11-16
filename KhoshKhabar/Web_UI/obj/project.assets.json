@@ -3875,10 +3875,31 @@
           "bin/placeholder/Database.dll": {}
         }
       },
+      "DTOs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/DTOs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTOs.dll": {}
+        }
+      },
+      "KarimHash/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/KarimHash.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KarimHash.dll": {}
+        }
+      },
       "Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "DTOs": "1.0.0",
           "Database": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13"
@@ -11321,6 +11342,16 @@
       "path": "../Database/Database.csproj",
       "msbuildProject": "../Database/Database.csproj"
     },
+    "DTOs/1.0.0": {
+      "type": "project",
+      "path": "../DTOs/DTOs.csproj",
+      "msbuildProject": "../DTOs/DTOs.csproj"
+    },
+    "KarimHash/1.0.0": {
+      "type": "project",
+      "path": "../KarimHash/KarimHash.csproj",
+      "msbuildProject": "../KarimHash/KarimHash.csproj"
+    },
     "Services/1.0.0": {
       "type": "project",
       "path": "../Services/Services.csproj",
@@ -11330,6 +11361,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Database >= 1.0.0",
+      "KarimHash >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.13",
@@ -11374,6 +11406,9 @@
           "projectReferences": {
             "C:\\Users\\shahn\\Documents\\GitHub\\KhoshKhabar\\KhoshKhabar\\Database\\Database.csproj": {
               "projectPath": "C:\\Users\\shahn\\Documents\\GitHub\\KhoshKhabar\\KhoshKhabar\\Database\\Database.csproj"
+            },
+            "C:\\Users\\shahn\\Documents\\GitHub\\KhoshKhabar\\KhoshKhabar\\KarimHash\\KarimHash.csproj": {
+              "projectPath": "C:\\Users\\shahn\\Documents\\GitHub\\KhoshKhabar\\KhoshKhabar\\KarimHash\\KarimHash.csproj"
             },
             "C:\\Users\\shahn\\Documents\\GitHub\\KhoshKhabar\\KhoshKhabar\\Services\\Services.csproj": {
               "projectPath": "C:\\Users\\shahn\\Documents\\GitHub\\KhoshKhabar\\KhoshKhabar\\Services\\Services.csproj"

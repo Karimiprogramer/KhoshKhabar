@@ -5,7 +5,7 @@ namespace KarimHash
 {
     public class SHA2
     {
-        static string HashIt(string text)
+        public static string HashIt(string text)
         {
             byte[] input = Encoding.Unicode.GetBytes(text);
             var service = new SHA256Managed();

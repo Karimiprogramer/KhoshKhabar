@@ -20,15 +20,15 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <div class="row">
-                                            <div class="col-4">
+                                            <div class="col-sm-12">
                                                 <p>نام مقاله</p>
                                                 <input type="text" class="form-control" asp-for="Content.Title" />
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-sm-12">
                                                 <p>نام نویسنده</p>
                                                 <input type="text" class="form-control" asp-for="Content.Author" />
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-sm-12">
                                                 <p>تگ های مقاله</p>
                                                 <input type="text" class="form-control" asp-for="Content.Tags" />
                                             </div>
@@ -37,18 +37,25 @@
                                     <p>عکس مقاله</p>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                           
                                         </div>
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="inputGroupFile01" asp-for="Content.ImagePath">
                                             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                                         </div>
                                     </div>
+                                    <div class="mt-4 mb-4">
+                                        <p>خلاصه مطلب</p>
+                                        <textarea asp-for="Content.Summary">
+
+                                        </textarea>
+                                    </div>
                                     <div class="mb-4">
-<textarea name="text" id="content" class="ckeditor" rows="6"></textarea>
+                                        <p>متن مطلب</p>
+                                    <textarea name="text" id="content" class="ckeditor" rows="6" asp-for="Content.content">
+
+                                    </textarea>
                                         <script type="text/javascript">
                                             CKEDITOR.replace('content', {
-                                                // Load the German interface.
                                                 language: 'fa'
                                             });
                                         </script>

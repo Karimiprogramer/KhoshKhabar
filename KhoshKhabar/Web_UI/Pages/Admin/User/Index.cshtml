@@ -1,4 +1,122 @@
 ﻿@page
 @model Web_UI.Pages.Admin.User.IndexModel
 @{
+    Layout = "_Layout";
 }
+@section Section
+{
+    <script src="~/Master/Js/sweetalert2.js"></script>
+    <script>
+        function DeleteCategory(ID)
+        {
+            Swal.fire({
+                title: "آیا از حذف این کاربر اطمینان دارید",
+                text: "این عمل غیر قابل بازگشت می باشد",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "OK"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.get("User/Remove/" + ID , function(){
+                        location.reload();
+                    }
+            )
+                }
+            });
+        }
+    </script>
+    }
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-header text-center">مدیریت کاربران</p>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content pt-0">
+                        <div role="tabpanel" id="tab-20" class="tab-pane fade show active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-2 mb-4">
+                                        <a class="btn btn-success mt-3" asp-page="Add">افزودن کاربر</a>
+                                    </div>
+                                    <div class="col-10">
+                                        @if (Model.Users.Count < 1)
+                                        {
+                                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                                لیست کاربران خالی است
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                        }
+                                        @if (HttpContext.Request.Query["result"] == "success")
+                                        {
+                                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                                عملیات با موفقیت انجام شد
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                        }
+                                        else if (HttpContext.Request.Query["result"] == "fail")
+                                        {
+                                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                                عملیات با شکست رو به رو شد
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                        }
+                                        @if (Model.Users != null)
+                                        {
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ردیف</th>
+                                                        <th>نام کاربر</th>
+                                                        <th>شماره تلفن</th>
+                                                        <th>اعمال قابل انجام</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @{
+                                                        int counter = 1;
+                                                    }
+                                                    @foreach (var item in Model.Users)
+                                                    {
+                                                        <tr>
+                                                            <td>@counter</td>
+                                                            <td>@item.Name</td>
+                                                            <td>@item.PhoneNumber</td>
+                                                            <td>
+                                                                <a class="btn btn-warning" asp-page="Update" asp-route-ID="@item.ID">ویرایش</a>
+                                                                <a class="btn btn-danger" onclick="DeleteCategory(@item.ID)">حذف</a>
+                                                            </td>
+                                                        </tr>
+                                                        counter++;
+                                                    }
+
+                                                </tbody>
+                                            </table>
+                                        }
+                                        else
+                                        {
+                                            <div class="jumbotron bg-warning">
+                                                <p class="text-xl-center" style="font-size :x-large;">شما هنوز هیچ دسته بندی وارد نکردید</p>
+                                            </div>
+                                        }
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

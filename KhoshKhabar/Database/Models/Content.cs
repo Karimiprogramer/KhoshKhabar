@@ -16,6 +16,7 @@ namespace Database.Models
         public string Title { get; set; }
 
         public string? ImagePath { get; set; }
+        public string? Summary { get; set; }
         public string content { get; set; }
         public DateTime ReleaseDate { get; set; }
         private int myVar = 0;

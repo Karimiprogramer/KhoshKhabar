@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Services.Interfaces;
+using DTOs;
 
 namespace Services.Classes
 {
@@ -94,6 +95,44 @@ namespace Services.Classes
             try
             {
                 _context.users.Update(User);
+                _context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+        }
+
+        public EditableUserDTO GetEditableUser(int id)
+        {
+            var user = _context.users.Find(id);
+            return new EditableUserDTO()
+            {
+                ID = user.ID,
+                Name = user.Name,
+                Bio = user.Bio,
+                PhoneNumber = user.PhoneNumber,
+                PassWordHash = user.PassWordHash
+
+            };
+        }
+
+        public bool UpdateUser(EditableUserDTO? User)
+        {
+            try
+            {
+                User? user = _context.users.Find(User.ID);
+                user.ID = User.ID;
+                user.Name = User.Name;
+                user.Bio = User.Bio;
+                user.PhoneNumber = User.PhoneNumber;
+                if (!string.IsNullOrEmpty(User.PassWordHash))
+                {
+                    user.PassWordHash = User.PassWordHash;
+                }
+                _context.users.Update(user);
                 _context.SaveChanges();
                 return true;
             }

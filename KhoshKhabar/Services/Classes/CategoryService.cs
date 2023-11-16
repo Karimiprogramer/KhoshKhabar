@@ -61,7 +61,7 @@ namespace Services.Classes
             }
         }
 
-        public Category GetCategoryById(int id)
+        public Category? GetCategoryById(int id)
         {
             try
             {

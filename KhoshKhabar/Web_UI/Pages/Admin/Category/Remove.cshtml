@@ -18,12 +18,12 @@
                 <div class="card-body">
                     <div class="tab-content pt-0">
                         <div role="tabpanel" id="tab-10" class="tab-pane fade show active">
-                            <form asp-page="Remove" method="post">
+                            <form asp-page="Remove" method="get">
                                 <input type="hidden" asp-for="Category.ID" />           
                                 <input type="hidden" asp-for="Category.Title" /> 
-                                <a class="card-header text-center">
-                                    آیا از حذف @Model.Category.Title مطمّن هستید
-                                </a>
+                                <p class=" text-center">
+                                    در حال حذف @Model.Category.Title 
+                                </p>
                             </form>
 
                         </div>
